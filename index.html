@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oleo+Script:wght@400;700&family=Oswald:wght@400;700&family=Quicksand:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    <main>
+
+        <form action="">
+            <section>
+                <ul>
+                    <li>
+                        <label for="username">Your name</label>
+                        <input type="text" name="user-name" id="user-name" required>
+                    </li>
+                    <li>
+                        <label for="useremail">Your E-mail Address</label>
+                        <input type="email" name="user-email" id="useremail" required>
+                    </li>
+                    <li>
+                        <label for="userpassword">Your Phone Number</label>
+                        <input type="password" name="user-password" id="userpassword" required minlength="5">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="usermessage">Your message</label>
+                <textarea name="user-message" id="usermessage" rows="6"></textarea>
+            </section>
+            <section>
+                <label for="">How did you find us?</label>
+                             <select name="find-us" id="find-us">
+                                 <option value="web">Web Search</option>
+                                 <option value="word of mounth">Word of mounth</option>
+                                 <option value="other">Other</option>
+                             </select>
+            </section>
+            <section>
+                <h2>How should we verify your account?</h2>
+               <ul>
+    
+                   <li class="form-control-inline">
+                       <input type="radio" name="call" id="call-me" value="call" required/>
+                       <label for="call-me">Call me</label>
+                   </li>
+                   <li class="form-control-inline">
+                       <input type="radio"  name="email" id="send-email" value="email" required/>
+                       <label for="send-email">Send me an email</label>
+                   </li>
+                   <li class="form-control-inline">
+                       <input type="radio" name="reply"  id="don't-reply" value="reply" required/>
+                       <label for="don't-reply">Don't reply</label>
+                   </li>
+               </ul>
+            </section>
+            <hr>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms" required>
+                    <label for="agree-terms">Agree to terms?</label>
+                </div>
+            </section>
+            <section id="buttons-section">
+                <button type="reset" id="first">Clear</button>
+                <button id="second">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

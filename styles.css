@@ -1,0 +1,87 @@
+body{
+    --color-purple-1:rgb(48, 25, 52);
+    background-color: rgb(240, 255, 255);
+    margin: 8em;
+    font-family: 'Roboto',sans-serif;
+}
+h1{
+    text-align: center;
+    color: rgb(22, 22, 22);
+    text-shadow: 1px 1px 1px rgb(27, 27, 27);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 30rem;
+    margin:  3rem auto;
+    background-color:rgb(230, 230, 250);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 2px 4px 6px rgb(42,45,45);
+    transition: transform 0.5 s ease-out 1s;
+}
+form:hover{
+    transform: scale(1.1);
+}
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input,textarea,select{
+    width:100%;
+    display: block;
+    margin-bottom:1rem;
+    box-sizing:border-box;
+    font:inherit;
+    border:1px solid rgb(184,184,184);
+    padding:0.25rem;
+    color:rgb(42,45,45);
+}
+textarea{
+    resize:vertical;
+}
+input:focus,
+textarea:focus {
+    background-color:rgb(240, 255, 255);
+    color:var(--color-purple-1) ;
+    border-color:var(--color-purple-1) ;
+}
+.form-control-inline{
+    display: flex;
+}
+.form-control-inline input{
+    width: auto;
+    margin-right:0.5rem;
+}
+button{
+font: inherit;
+ border-radius: 4px;
+ cursor: pointer;
+ 
+}
+#buttons-section{
+    text-align: right;
+}
+#first{
+    padding:0.2rem 1.01rem;
+    border: 2px solid var(--color-purple-1); 
+    color: var(--color-purple-1);  
+    background-color: white;
+}
+#first:hover{
+    background-color:rgb(230, 230, 250) ;
+    border: 2px solid var(--color-purple-1); 
+}
+#second{
+    padding:0.2rem 1.01rem;
+    background-color:var(--color-purple-1) ;
+    color: white;
+    border: 2px solid var(--color-purple-1);
+ 
+}
+#second:hover{
+    background-color:rgb(57, 31, 60) ;
+}
